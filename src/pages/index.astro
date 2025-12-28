@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ServiceCard from "../components/ServiceCard.astro";
 ---
 
 <BaseLayout title="Professional Locksmith & Safe Services - Safecracker">
@@ -9,7 +8,6 @@ import ServiceCard from "../components/ServiceCard.astro";
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0 z-0">
       <div class="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-slate-800/90 to-amber-900/85 z-10"></div>
-      <!-- Using Unsplash placeholder - replace with actual safe/lock image -->
       <img 
         src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2000" 
         alt="Professional Safe and Locksmith Services"
@@ -87,21 +85,16 @@ import ServiceCard from "../components/ServiceCard.astro";
               alt="Commercial Locksmith Services"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-            <div class="absolute bottom-4 left-4">
-              <div class="w-14 h-14 bg-amber-500 rounded-xl flex items-center justify-center">
-                <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                </svg>
-              </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <h3 class="text-3xl font-black text-white">Commercial Locksmith</h3>
             </div>
           </div>
           <div class="p-8">
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Commercial Locksmith</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <p class="text-gray-600 mb-6 leading-relaxed text-lg">
               Master key systems, access control, high-security locks, and commercial lock repair for businesses.
             </p>
-            <a href="/services/commercial-locksmith" class="inline-flex items-center gap-2 text-amber-600 font-semibold hover:gap-4 transition-all">
+            <a href="/services/commercial-locksmith" class="inline-flex items-center gap-2 text-amber-600 font-semibold text-lg hover:gap-4 transition-all">
               Learn More
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -118,21 +111,16 @@ import ServiceCard from "../components/ServiceCard.astro";
               alt="Gate Automation and Welding Services"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-            <div class="absolute bottom-4 left-4">
-              <div class="w-14 h-14 bg-amber-500 rounded-xl flex items-center justify-center">
-                <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                </svg>
-              </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <h3 class="text-3xl font-black text-white">Gate Automation & Welding</h3>
             </div>
           </div>
           <div class="p-8">
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Gate Automation & Welding</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <p class="text-gray-600 mb-6 leading-relaxed text-lg">
               Automatic gate installation, repair, and mobile welding services for residential and commercial properties.
             </p>
-            <a href="/services/gate-automation" class="inline-flex items-center gap-2 text-amber-600 font-semibold hover:gap-4 transition-all">
+            <a href="/services/gate-automation" class="inline-flex items-center gap-2 text-amber-600 font-semibold text-lg hover:gap-4 transition-all">
               Learn More
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -149,21 +137,16 @@ import ServiceCard from "../components/ServiceCard.astro";
               alt="Safe and Vault Services"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-            <div class="absolute bottom-4 left-4">
-              <div class="w-14 h-14 bg-amber-500 rounded-xl flex items-center justify-center">
-                <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                </svg>
-              </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <h3 class="text-3xl font-black text-white">Safe & Vault Services</h3>
             </div>
           </div>
           <div class="p-8">
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Safe & Vault Services</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <p class="text-gray-600 mb-6 leading-relaxed text-lg">
               Professional safe opening, combination changes, and vault maintenance services for maximum security.
             </p>
-            <a href="/services/safe-vault" class="inline-flex items-center gap-2 text-amber-600 font-semibold hover:gap-4 transition-all">
+            <a href="/services/safe-vault" class="inline-flex items-center gap-2 text-amber-600 font-semibold text-lg hover:gap-4 transition-all">
               Learn More
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
