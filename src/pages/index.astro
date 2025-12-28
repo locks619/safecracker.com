@@ -64,11 +64,65 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </div>
   </section>
 
-  <!-- License & Trust Section -->
-  <section class="py-16 bg-gradient-to-br from-gray-900 to-slate-900 text-white">
+  <!-- Trust & Anti-Scam Section -->
+  <section class="py-20 bg-gradient-to-br from-gray-900 to-slate-900 text-white">
     <div class="container mx-auto px-4">
       <div class="max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <!-- Anti-Scam Warning Banner -->
+        <div class="bg-red-600/20 border-2 border-red-500 rounded-2xl p-8 mb-12 backdrop-blur-sm">
+          <div class="flex items-start gap-4">
+            <svg class="w-12 h-12 text-red-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+            </svg>
+            <div>
+              <h3 class="text-2xl font-black text-red-400 mb-3">Beware of Locksmith Scams</h3>
+              <p class="text-gray-300 text-lg mb-4">
+                Many unlicensed "locksmiths" advertise fake $19-$39 rates to get you on the phone, then charge hundreds when they arrive. They often damage your locks to justify inflated bills.
+              </p>
+              <p class="text-white font-bold text-lg">
+                ✓ We provide honest, upfront pricing<br/>
+                ✓ No bait-and-switch tactics<br/>
+                ✓ Licensed, background-checked technician
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+          <!-- 15+ Years -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 text-center">
+            <div class="text-5xl font-black text-amber-400 mb-2">15+</div>
+            <p class="text-gray-300 font-semibold">Years Serving<br/>Southern CA</p>
+            <p class="text-xs text-gray-500 mt-2">Since 2010</p>
+          </div>
+
+          <!-- 29 Years Experience -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 text-center">
+            <div class="text-5xl font-black text-amber-400 mb-2">29</div>
+            <p class="text-gray-300 font-semibold">Years Master<br/>Tech Experience</p>
+            <p class="text-xs text-gray-500 mt-2">Since 1996</p>
+          </div>
+
+          <!-- Women-Owned -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 text-center">
+            <svg class="w-12 h-12 text-amber-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+            <p class="text-gray-300 font-semibold">Women-Owned<br/>Business</p>
+          </div>
+
+          <!-- Licensed -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 text-center">
+            <svg class="w-12 h-12 text-amber-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <p class="text-gray-300 font-semibold">CA Licensed<br/>LCO 6687</p>
+          </div>
+        </div>
+
+        <!-- Detailed Trust Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Licensed & Verified -->
           <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-amber-500/50 transition-all">
             <div class="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -76,12 +130,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-2">Licensed & Verified</h3>
-            <p class="text-gray-400 mb-4">CA Locksmith License LCO 6687</p>
+            <h3 class="text-xl font-bold mb-2 text-center">Licensed & Background Checked</h3>
+            <p class="text-gray-400 mb-4 text-center">CA Locksmith License LCO 6687</p>
             <a 
               href="https://www.bsis.ca.gov/online_services/verify_license.shtml" 
               target="_blank"
-              class="text-amber-400 hover:text-amber-300 text-sm font-semibold inline-flex items-center gap-1"
+              class="text-amber-400 hover:text-amber-300 text-sm font-semibold flex items-center justify-center gap-1"
             >
               Verify License
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -97,9 +151,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-2">Mobile Service</h3>
-            <p class="text-gray-400 mb-4">We Come to Your Location</p>
-            <p class="text-sm text-gray-500">No storefront - All services performed at your home or business</p>
+            <h3 class="text-xl font-bold mb-2 text-center">Mobile Service</h3>
+            <p class="text-gray-400 mb-4 text-center">We Come to Your Location</p>
+            <p class="text-sm text-gray-500 text-center">No storefront - All services performed at your home or business</p>
           </div>
 
           <!-- Transparent Pricing -->
@@ -109,14 +163,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-2">Transparent Pricing</h3>
-            <p class="text-gray-400 mb-4">No Hidden Fees</p>
-            <p class="text-sm text-gray-500">Written estimates before work begins • Average service: $250</p>
+            <h3 class="text-xl font-bold mb-2 text-center">Honest Pricing</h3>
+            <p class="text-gray-400 mb-4 text-center">No Hidden Fees</p>
+            <p class="text-sm text-gray-500 text-center">Written estimates before work begins • Average service: $250</p>
           </div>
         </div>
       </div>
     </div>
-  </section><!-- Services Section -->
+  </section>
+
+  <!-- Services Section -->
   <section class="py-24 bg-gradient-to-b from-white to-gray-50">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
@@ -220,7 +276,111 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </h2>
         <div class="w-24 h-1.5 bg-gradient-to-r from-amber-500 to-yellow-600 mx-auto mb-6"></div>
         <p class="text-2xl text-gray-600 max-w-3xl mx-auto font-light">
-          Professional locksmith and safe services across Southern<!-- Trust Badges Section -->
+          Professional locksmith and safe services across Southern California
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800" 
+              alt="Commercial Safe Installation"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">Commercial Safe Installation</h3>
+              <p class="text-gray-300">High-security vault system for corporate office</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1582139329536-e7284fece509?q=80&w=800" 
+              alt="Master Key System"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">Master Key System</h3>
+              <p class="text-gray-300">Complete access control for multi-tenant building</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1633613286991-611fe299c4be?q=80&w=800" 
+              alt="Automatic Gate Installation"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">Automatic Gate Installation</h3>
+              <p class="text-gray-300">Custom gate automation with welding fabrication</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800" 
+              alt="Emergency Lockout Service"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">Emergency Lockout Service</h3>
+              <p class="text-gray-300">24/7 response for commercial property access</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1582139329536-e7284fece509?q=80&w=800" 
+              alt="Safe Combination Change"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">Safe Combination Change</h3>
+              <p class="text-gray-300">Professional vault servicing and maintenance</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1633613286991-611fe299c4be?q=80&w=800" 
+              alt="Access Control Installation"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">Access Control Installation</h3>
+              <p class="text-gray-300">Electronic security system integration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges Section -->
   <section class="py-16 bg-gray-900">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
@@ -314,8 +474,3 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     0%, 100% {
       transform: translateY(0) translateX(-50%);
     }
-    50% {
-      transform: translateY(-10px) translateX(-50%);
-    }
-  }
-</style>
