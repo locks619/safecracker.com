@@ -28,7 +28,7 @@ import AntiScam from "../components/AntiScam.astro";
     "geoRadius": "241401"
   },
   "openingHours": "Mo-Su 00:00-23:59",
-  "priceRange": "utf8",
+  "priceRange": "",
   "additionalType": "https://schema.org/ProfessionalService",
   "hasCredential": "CA License LCO 6687"
 }
@@ -37,8 +37,16 @@ import AntiScam from "../components/AntiScam.astro";
 <BaseLayout title="Professional Locksmith & Safe Services - Safecracker">
   <Header />
 
-  <!-- Hero Section -->
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800">
+  <!-- Hero Section with Real Image -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img 
+        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2400" 
+        alt="Professional locksmith working on commercial gate automation system"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-gray-900/90 to-slate-800/95"></div>
+    </div>
     <div class="absolute inset-0 opacity-10">
       <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
     </div>
@@ -111,7 +119,7 @@ import AntiScam from "../components/AntiScam.astro";
           <div class="aspect-[4/3] overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1582139329536-e7284fece509?q=80&w=800" 
-              alt="Commercial Locksmith"
+              alt="Commercial door hardware and panic bar installation"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
           </div>
@@ -131,7 +139,7 @@ import AntiScam from "../components/AntiScam.astro";
           <div class="aspect-[4/3] overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800" 
-              alt="Gate Automation"
+              alt="Automatic gate installation and automation system"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
           </div>
@@ -151,7 +159,7 @@ import AntiScam from "../components/AntiScam.astro";
           <div class="aspect-[4/3] overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1633613286991-611fe299c4be?q=80&w=800" 
-              alt="Safe & Vault"
+              alt="Professional safe opening and vault maintenance"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
           </div>
@@ -166,6 +174,97 @@ import AntiScam from "../components/AntiScam.astro";
             </span>
           </div>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Work Gallery -->
+  <section style="padding-top: var(--section-py); padding-bottom: var(--section-py);" class="bg-gray-50">
+    <div class="container mx-auto px-4" style="max-width: var(--container-max);">
+      <div class="text-center mb-16">
+        <h2 class="text-h1 text-gray-900 mb-4">Featured Work</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-amber-500 to-yellow-600 mx-auto mb-6"></div>
+        <p class="text-body-lg text-gray-600">Real jobs from the field</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="group relative bg-white rounded-2xl overflow-hidden" style="box-shadow: var(--shadow-md);">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800" 
+              alt="Commercial gate automation installation"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/90 to-transparent p-6">
+            <h3 class="text-white font-bold text-lg">Gate Automation</h3>
+          </div>
+        </div>
+
+        <div class="group relative bg-white rounded-2xl overflow-hidden" style="box-shadow: var(--shadow-md);">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1633613286991-611fe299c4be?q=80&w=800" 
+              alt="Safe opening and combination change"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/90 to-transparent p-6">
+            <h3 class="text-white font-bold text-lg">Safe Opening</h3>
+          </div>
+        </div>
+
+        <div class="group relative bg-white rounded-2xl overflow-hidden" style="box-shadow: var(--shadow-md);">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1582139329536-e7284fece509?q=80&w=800" 
+              alt="Commercial door hardware installation"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/90 to-transparent p-6">
+            <h3 class="text-white font-bold text-lg">Commercial Hardware</h3>
+          </div>
+        </div>
+
+        <div class="group relative bg-white rounded-2xl overflow-hidden" style="box-shadow: var(--shadow-md);">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1585504198199-20277593b94f?q=80&w=800" 
+              alt="Emergency lockout service"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/90 to-transparent p-6">
+            <h3 class="text-white font-bold text-lg">Emergency Lockout</h3>
+          </div>
+        </div>
+
+        <div class="group relative bg-white rounded-2xl overflow-hidden" style="box-shadow: var(--shadow-md);">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd?q=80&w=800" 
+              alt="Access control and keypad installation"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/90 to-transparent p-6">
+            <h3 class="text-white font-bold text-lg">Access Control</h3>
+          </div>
+        </div>
+
+        <div class="group relative bg-white rounded-2xl overflow-hidden" style="box-shadow: var(--shadow-md);">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?q=80&w=800" 
+              alt="Professional locksmith technician at work"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/90 to-transparent p-6">
+            <h3 class="text-white font-bold text-lg">Professional Service</h3>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -185,7 +284,7 @@ import AntiScam from "../components/AntiScam.astro";
   </section>
 
   <!-- Service Area -->
-  <section style="padding-top: var(--section-py); padding-bottom: var(--section-py);" class="bg-gray-50">
+  <section style="padding-top: var(--section-py); padding-bottom: var(--section-py);" class="bg-white">
     <div class="container mx-auto px-4" style="max-width: var(--container-max);">
       <div class="text-center mb-12">
         <h2 class="text-h1 text-gray-900 mb-4">Serving Southern California</h2>
@@ -238,4 +337,3 @@ import AntiScam from "../components/AntiScam.astro";
 
   <Footer />
 </BaseLayout>
-
