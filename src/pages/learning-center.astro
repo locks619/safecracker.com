@@ -1,92 +1,131 @@
 ﻿---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <BaseLayout title="Learning Center - Safecracker" description="Professional locksmith education and field insights. Real job challenges, solutions, and technical knowledge from 29 years of experience.">
-  <section class="py-24 bg-gradient-to-br from-slate-900 to-gray-900 text-white">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-6xl font-black mb-6">Learning Center</h1>
-        <p class="text-2xl text-gray-300 mb-4">Professional locksmith knowledge from the field</p>
-        <p class="text-lg text-gray-400">Real challenges. Real solutions. 29 years of experience.</p>
+  <Header />
+
+  <!-- Hero -->
+  <section class="relative h-[500px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 to-gray-900">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+    </div>
+    <div class="container mx-auto px-4 z-10 relative text-center text-white" style="max-width: var(--container-max);">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-6">
+        <span class="text-amber-400 font-bold">PROFESSIONAL KNOWLEDGE BASE</span>
       </div>
+      <h1 class="text-display mb-4">Learning Center</h1>
+      <p class="text-body-lg text-gray-300">Real challenges. Real solutions. 29 years of experience.</p>
     </div>
   </section>
 
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-4 max-w-5xl">
+  <!-- Framework -->
+  <section style="padding-top: var(--section-py); padding-bottom: var(--section-py);" class="bg-white">
+    <div class="container mx-auto px-4" style="max-width: var(--container-max);">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-black text-gray-900 mb-4">Our Educational Framework</h2>
-        <p class="text-xl text-gray-600">Every post follows a structured 6-part format for maximum value</p>
+        <h2 class="text-h1 mb-4">Our 6-Part Educational Framework</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-amber-500 to-yellow-600 mx-auto mb-6"></div>
+        <p class="text-body-lg text-gray-600">Every post follows a structured format for maximum value</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-        <div class="bg-slate-50 p-8 rounded-2xl border-l-4 border-amber-500">
+        <div class="bg-white p-8 rounded-2xl border-l-4 border-amber-500" style="box-shadow: var(--shadow-md);">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-amber-500 text-white rounded-full flex items-center justify-center font-black text-lg">1</div>
-            <h3 class="text-2xl font-bold">The Situation</h3>
+            <div class="w-12 h-12 bg-amber-500 text-white rounded-full flex items-center justify-center font-black text-lg">1</div>
+            <h3 class="text-h3">The Situation</h3>
           </div>
-          <p class="text-gray-700">What we encountered in the field. Real-world context and initial assessment.</p>
+          <p class="text-body text-gray-700">Real-world context and initial assessment</p>
         </div>
 
-        <div class="bg-slate-50 p-8 rounded-2xl border-l-4 border-red-500">
+        <div class="bg-white p-8 rounded-2xl border-l-4 border-red-500" style="box-shadow: var(--shadow-md);">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-red-500 text-white rounded-full flex items-center justify-center font-black text-lg">2</div>
-            <h3 class="text-2xl font-bold">The Challenge</h3>
+            <div class="w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center font-black text-lg">2</div>
+            <h3 class="text-h3">The Challenge</h3>
           </div>
-          <p class="text-gray-700">Technical obstacles and complications that required problem-solving.</p>
+          <p class="text-body text-gray-700">Technical obstacles requiring problem-solving</p>
         </div>
 
-        <div class="bg-slate-50 p-8 rounded-2xl border-l-4 border-green-600">
+        <div class="bg-white p-8 rounded-2xl border-l-4 border-green-600" style="box-shadow: var(--shadow-md);">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center font-black text-lg">3</div>
-            <h3 class="text-2xl font-bold">The Solution</h3>
+            <div class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-black text-lg">3</div>
+            <h3 class="text-h3">The Solution</h3>
           </div>
-          <p class="text-gray-700">Step-by-step methodology and technical approach to resolution.</p>
+          <p class="text-body text-gray-700">Step-by-step methodology and approach</p>
         </div>
 
-        <div class="bg-slate-50 p-8 rounded-2xl border-l-4 border-blue-600">
+        <div class="bg-white p-8 rounded-2xl border-l-4 border-blue-600" style="box-shadow: var(--shadow-md);">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg">4</div>
-            <h3 class="text-2xl font-bold">The Lesson</h3>
+            <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg">4</div>
+            <h3 class="text-h3">The Lesson</h3>
           </div>
-          <p class="text-gray-700">Key insights for customers and locksmiths. What this teaches about security.</p>
+          <p class="text-body text-gray-700">Key insights for customers and locksmiths</p>
         </div>
 
-        <div class="bg-slate-50 p-8 rounded-2xl border-l-4 border-purple-600">
+        <div class="bg-white p-8 rounded-2xl border-l-4 border-purple-600" style="box-shadow: var(--shadow-md);">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-black text-lg">5</div>
-            <h3 class="text-2xl font-bold">Tools & Techniques</h3>
+            <div class="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-black text-lg">5</div>
+            <h3 class="text-h3">Tools & Techniques</h3>
           </div>
-          <p class="text-gray-700">Equipment used and specialized methods applied during service.</p>
+          <p class="text-body text-gray-700">Equipment and specialized methods</p>
         </div>
 
-        <div class="bg-slate-50 p-8 rounded-2xl border-l-4 border-gray-700">
+        <div class="bg-white p-8 rounded-2xl border-l-4 border-gray-700" style="box-shadow: var(--shadow-md);">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-gray-700 text-white rounded-full flex items-center justify-center font-black text-lg">6</div>
-            <h3 class="text-2xl font-bold">Time & Cost</h3>
+            <div class="w-12 h-12 bg-gray-700 text-white rounded-full flex items-center justify-center font-black text-lg">6</div>
+            <h3 class="text-h3">Time & Cost</h3>
           </div>
-          <p class="text-gray-700">Realistic expectations for service duration and transparent pricing.</p>
+          <p class="text-body text-gray-700">Realistic expectations and transparent pricing</p>
         </div>
       </div>
 
-      <div class="bg-gradient-to-br from-amber-50 to-yellow-50 p-12 rounded-2xl border-2 border-amber-200">
-        <h2 class="text-3xl font-black mb-6 text-center">Weekly Job of the Week</h2>
-        <p class="text-xl text-gray-700 text-center mb-8">New educational content every week. Real jobs. Real learning.</p>
-        <div class="text-center">
-          <p class="text-gray-600 text-lg">Coming Soon: Weekly video breakdowns with photos and technical insights</p>
+      <!-- Upcoming Jobs Grid -->
+      <div class="mb-20">
+        <h2 class="text-h2 mb-8">Upcoming Jobs</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-2xl overflow-hidden" style="box-shadow: var(--shadow-md);">
+            <div class="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+              <span class="text-gray-500 font-bold">Coming Soon</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-h3 mb-2">Job of the Week</h3>
+              <p class="text-body text-gray-600">Weekly educational content starting soon</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl overflow-hidden" style="box-shadow: var(--shadow-md);">
+            <div class="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+              <span class="text-gray-500 font-bold">Coming Soon</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-h3 mb-2">Field Insights</h3>
+              <p class="text-body text-gray-600">Real-world security challenges</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl overflow-hidden" style="box-shadow: var(--shadow-md);">
+            <div class="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+              <span class="text-gray-500 font-bold">Coming Soon</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-h3 mb-2">Technical Deep Dives</h3>
+              <p class="text-body text-gray-600">Advanced locksmith knowledge</p>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="p-8 bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl border-2 border-amber-200 text-center">
+        <h2 class="text-h2 mb-4">Have a Security Question?</h2>
+        <p class="text-body-lg text-gray-700 mb-8">We share knowledge to help customers and the locksmith trade</p>
+        <a href="/contact" class="btn-primary">
+          Contact Us
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="py-16 bg-gray-900 text-white">
-    <div class="container mx-auto px-4 max-w-4xl text-center">
-      <h2 class="text-3xl font-bold mb-4">Have a Security Question?</h2>
-      <p class="text-xl text-gray-300 mb-8">We share knowledge to help customers and the locksmith trade</p>
-      <a href="/contact" class="inline-flex items-center gap-3 bg-amber-500 text-gray-900 px-8 py-4 rounded-full font-bold hover:bg-amber-400 transition-all">
-        Contact Us
-      </a>
-    </div>
-  </section>
+  <Footer />
 </BaseLayout>
