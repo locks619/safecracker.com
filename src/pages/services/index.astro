@@ -1,0 +1,41 @@
+﻿---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+<BaseLayout title="Locksmith Services - SafeCracker Inc">
+<Header />
+
+<main style="max-width: 1240px; margin: 0 auto; padding: 60px 40px; font-family: 'Libre Baskerville', Georgia, serif;">
+  <h1 style="font-size: 48px; font-weight: 700; margin-bottom: 20px;">Locksmith Services</h1>
+  <p style="font-size: 18px; color: #555; margin-bottom: 60px;">Professional locksmith services across Southern California. CA License LCO 6687.</p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+    <a href="/services/commercial-locksmith" style="border: 2px solid #e0e0e0; padding: 32px; border-radius: 12px; text-decoration: none; color: #000;">
+      <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 12px;">Commercial Locksmith</h2>
+      <p style="font-size: 15px; color: #666;">Access control, master keys, door hardware, panic bars</p>
+    </a>
+
+    <a href="/services/residential-locksmith" style="border: 2px solid #e0e0e0; padding: 32px; border-radius: 12px; text-decoration: none; color: #000;">
+      <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 12px;">Residential Locksmith</h2>
+      <p style="font-size: 15px; color: #666;">Lockouts, rekeying, lock upgrades, deadbolts</p>
+    </a>
+
+    <a href="/services/automotive-locksmith" style="border: 2px solid #e0e0e0; padding: 32px; border-radius: 12px; text-decoration: none; color: #000;">
+      <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 12px;">Automotive Locksmith</h2>
+      <p style="font-size: 15px; color: #666;">Car lockouts, key cutting, ignition repair</p>
+    </a>
+  </div>
+
+  <div style="margin-top: 80px; text-align: center; padding: 40px; background: #fafafa; border-radius: 12px;">
+    <p style="font-size: 18px; margin-bottom: 20px;">All services backed by CA License LCO 6687 and 90-day warranty</p>
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+      <a href="tel:6197948355" style="font-size: 17px; color: #000; text-decoration: none;">Call (619) 794-8355</a>
+      <a href="sms:6197948355" style="font-size: 17px; color: #000; text-decoration: none;">Text Us</a>
+      <a href="mailto:info@safecrackerinc.com" style="font-size: 17px; color: #000; text-decoration: none;">Email</a>
+    </div>
+  </div>
+</main>
+
+<Footer />
+</BaseLayout>

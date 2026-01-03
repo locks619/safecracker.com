@@ -1,0 +1,46 @@
+﻿---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+<BaseLayout title="Safe Services - SafeCracker Inc">
+<Header />
+
+<main style="max-width: 1240px; margin: 0 auto; padding: 60px 40px; font-family: 'Libre Baskerville', Georgia, serif;">
+  <h1 style="font-size: 48px; font-weight: 700; margin-bottom: 20px;">Safe & Vault Services</h1>
+  <p style="font-size: 18px; color: #555; margin-bottom: 60px;">Technical safe services for residential, commercial, and institutional safes. CA License LCO 6687.</p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+    <a href="/safes/opening" style="border: 2px solid #e0e0e0; padding: 32px; border-radius: 12px; text-decoration: none; color: #000;">
+      <h2 style="font-size: 22px; font-weight: 700; margin-bottom: 12px;">Safe Opening</h2>
+      <p style="font-size: 15px; color: #666;">Non-destructive and forced entry procedures</p>
+    </a>
+
+    <a href="/safes/repair" style="border: 2px solid #e0e0e0; padding: 32px; border-radius: 12px; text-decoration: none; color: #000;">
+      <h2 style="font-size: 22px; font-weight: 700; margin-bottom: 12px;">Safe Repair</h2>
+      <p style="font-size: 15px; color: #666;">Lock mechanism and hinge restoration</p>
+    </a>
+
+    <a href="/safes/installation" style="border: 2px solid #e0e0e0; padding: 32px; border-radius: 12px; text-decoration: none; color: #000;">
+      <h2 style="font-size: 22px; font-weight: 700; margin-bottom: 12px;">Safe Installation</h2>
+      <p style="font-size: 15px; color: #666;">Anchoring and positioning services</p>
+    </a>
+
+    <a href="/safes/combination-changes" style="border: 2px solid #e0e0e0; padding: 32px; border-radius: 12px; text-decoration: none; color: #000;">
+      <h2 style="font-size: 22px; font-weight: 700; margin-bottom: 12px;">Combination Changes</h2>
+      <p style="font-size: 15px; color: #666;">Mechanical and electronic lock servicing</p>
+    </a>
+  </div>
+
+  <div style="margin-top: 80px; text-align: center; padding: 40px; background: #fafafa; border-radius: 12px;">
+    <p style="font-size: 18px; margin-bottom: 20px;">CA License LCO 6687 • 90-Day Warranty • Mobile Service</p>
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+      <a href="tel:6197948355" style="font-size: 17px; color: #000; text-decoration: none;">Call (619) 794-8355</a>
+      <a href="sms:6197948355" style="font-size: 17px; color: #000; text-decoration: none;">Text Us</a>
+      <a href="mailto:info@safecrackerinc.com" style="font-size: 17px; color: #000; text-decoration: none;">Email</a>
+    </div>
+  </div>
+</main>
+
+<Footer />
+</BaseLayout>

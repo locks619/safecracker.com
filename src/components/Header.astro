@@ -1,12 +1,18 @@
 ﻿---
 ---
 <style>
+.header-mobile {
+  display: block;
+  padding: 12px 20px;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
 .header-desktop {
   display: none;
 }
 @media (min-width: 768px) {
-  .mobile-hide-brand {
-    display: inline !important;
+  .header-mobile {
+    display: none;
   }
   .header-desktop {
     display: block;
@@ -54,6 +60,12 @@
 }
 </style>
 
+<header class="header-mobile">
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <span>☰</span>
+  </div>
+</header>
+
 <header class="header-desktop">
   <div class="header-inner">
     <div class="brand">
@@ -62,7 +74,10 @@
     </div>
     <nav class="nav-links">
       <a href="/">Home</a>
-      <a href="/services/safe-vault">Services</a>
+      <a href="/services">Services</a>
+      <a href="/safes">Safes</a>
+      <a href="/service-areas">Service Areas</a>
+      <a href="/learning-center">Learning Center</a>
       <a href="/contact">Contact</a>
       <a href="tel:6197948355" class="header-phone">(619) 794-8355</a>
     </nav>
