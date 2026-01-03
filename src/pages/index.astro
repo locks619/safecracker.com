@@ -124,7 +124,17 @@ import Footer from "../components/Footer.astro";
     padding: 40px 32px;
   }
   
-  .trust-card .reviews {
+  
+  .trust-card .policies {
+    margin-bottom: 24px;
+  }
+  
+  .trust-card .policies div {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }  .trust-card .reviews {
     font-size: 18px;
     color: #000;
     margin-bottom: 24px;
@@ -316,6 +326,11 @@ import Footer from "../components/Footer.astro";
   <div class="desktop-hero">
 <div class="trust-card">
       <div class="reviews">★★★★★ Google Reviews (4.9)</div>
+      
+      <div class="policies">
+        <div>✓ Upfront pricing</div>
+        <div>✓ Written estimates on request</div>
+      </div>
       
       <div class="service-area">
         Vista · Oceanside · Carlsbad · San Marcos · Encinitas
@@ -572,6 +587,7 @@ import Footer from "../components/Footer.astro";
     }
   }
 </style>
+
 
 
 
