@@ -9,33 +9,35 @@ import Footer from "../components/Footer.astro";
 <style>
 .mobile-priority {
   background: #fff;
-  padding: 24px 20px;
+  padding: 48px 24px;
   text-align: center;
+  font-family: 'Cormorant Garamond', Georgia, serif;
 }
 .mobile-priority h1 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   color: #000;
-  margin: 0 0 8px 0;
+  margin: 0 0 4px 0;
   letter-spacing: -0.01em;
 }
 .mobile-priority .tagline {
-  font-size: 16px;
-  color: #555;
-  margin: 0 0 24px 0;
+  font-size: 17px;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0 40px 0;
 }
 .mobile-priority .phone {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 600;
   color: #000;
-  margin: 0 0 32px 0;
+  margin: 0 0 48px 0;
   display: block;
   text-decoration: none;
 }
 .mobile-priority .ctas {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 20px;
   max-width: 400px;
   margin: 0 auto;
 }
@@ -43,28 +45,21 @@ import Footer from "../components/Footer.astro";
   display: block;
   padding: 16px;
   min-height: 56px;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
   text-decoration: none;
-  border-radius: 8px;
+  background: transparent;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
+  cursor: pointer;
+  transition: opacity 0.2s;
 }
-.mobile-priority .ctas a:nth-child(1) {
-  background: #000;
-  color: #fff;
-}
-.mobile-priority .ctas a:nth-child(2) {
-  background: #f5f5f5;
-  color: #000;
-  border: 2px solid #ddd;
-}
-.mobile-priority .ctas a:nth-child(3) {
-  background: #fff;
-  color: #000;
-  border: 2px solid #ddd;
+.mobile-priority .ctas a:active {
+  opacity: 0.6;
 }
 </style>
 
@@ -75,31 +70,11 @@ import Footer from "../components/Footer.astro";
   <a href="tel:6197948355" class="phone">(619) 794-8355</a>
   
   <div class="ctas">
-    <a href="tel:6197948355">📞 Call Now</a>
+    <a href="tel:6197948355">☎ Call Now</a>
     <a href="sms:6197948355">💬 Text Us</a>
-    <a href="mailto:info@safecrackerinc.com">✉️ Email + Photos</a>
+    <a href="mailto:info@safecrackerinc.com">✉ Email + Photos</a>
   </div>
-</section>
-
-  <section class="hero-test">
-    <div class="hero-test-inner">
-      <div class="hero-test-image">
-        <img src="/hero/phones.webp" alt="Safecracker on phone" />
-      </div>
-      <div class="hero-test-content">
-        <h1>Safecracker Inc</h1>
-        <p>Licensed Locksmith & Safe Services</p>
-        <p>(619) 794-8355</p>
-        <div class="actions">
-          <a href="tel:16197948355">Call Now</a>
-          <a href="sms:16197948355">Text Us</a>
-          <a href="/contact">Email</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <Footer />
+</section><Footer />
 </BaseLayout>
 
 <style data-hero-test>
@@ -233,6 +208,7 @@ import Footer from "../components/Footer.astro";
     }
   }
 </style>
+
 
 
 
