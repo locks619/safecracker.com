@@ -134,6 +134,31 @@ import Footer from "../components/Footer.astro";
     color: #555;
     margin-bottom: 8px;
     line-height: 1.6;
+  }
+  .trust-card .identity {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .trust-card .company-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 8px;
+  }
+  
+  .trust-card .license-proud {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+  }
+  
+  .trust-card .tagline {
+    font-size: 14px;
+    color: #666;
   }  .trust-card .reviews {
     font-size: 18px;
     color: #000;
@@ -141,43 +166,14 @@ import Footer from "../components/Footer.astro";
     font-weight: 600;
   }
   
-  .trust-card .service-area {
-    font-size: 15px;
-    color: #555;
-    margin-bottom: 24px;
-    line-height: 1.8;
-  }
-  
-  .trust-card .info-line {
+.trust-card .info-line {
     font-size: 15px;
     color: #555;
     margin-bottom: 12px;
     line-height: 1.6;
   }
   
-  .trust-card .ctas {
-    margin-top: 32px;
-    padding-top: 28px;
-    border-top: 1px solid #ddd;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  
-  .trust-card .ctas a {
-    display: block;
-    font-size: 17px;
-    color: #000;
-    text-decoration: none;
-    text-align: center;
-    padding: 12px;
-  }
-  
-  .trust-card .ctas a:hover {
-    opacity: 0.6;
-  }
-  
-  .proof-bar {
+.proof-bar {
     background: #f8f8f8;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
@@ -373,7 +369,18 @@ import Footer from "../components/Footer.astro";
         <strong>Mobile</strong>
         We come to you
       </div>
+  
+  <!-- PRIMARY CTA BLOCK -->
+  <div style="max-width: 1240px; margin: 60px auto; padding: 0 40px;">
+    <div style="background: #fafafa; border: 2px solid #e0e0e0; border-radius: 12px; padding: 40px; text-align: center;">
+      <p style="font-size: 20px; font-weight: 600; margin-bottom: 24px;">Ready to get started?</p>
+      <div style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;">
+        <a href="tel:6197948355" style="font-size: 18px; color: #000; text-decoration: none; border: 2px solid #000; padding: 14px 32px; border-radius: 8px; font-weight: 600;">Call (619) 794-8355</a>
+        <a href="sms:6197948355" style="font-size: 18px; color: #000; text-decoration: none; border: 2px solid #e0e0e0; padding: 14px 32px; border-radius: 8px;">Text Us</a>
+        <a href="mailto:info@safecrackerinc.com" style="font-size: 18px; color: #000; text-decoration: none; border: 2px solid #e0e0e0; padding: 14px 32px; border-radius: 8px;">Email</a>
+      </div>
     </div>
+  </div>  </div>
   </div>
   
   <div class="services-grid">
@@ -396,7 +403,7 @@ import Footer from "../components/Footer.astro";
   <!-- PROGRESSIVE DISCLOSURE CONTROLS -->
   <div class="disclosure-controls">
     <button onclick="togglePanel('reviews')">View Reviews</button>
-    <button onclick="togglePanel('coverage')">Service Coverage Map</button>
+    <button onclick="togglePanel('areas')">Service Areas</button>
     <button onclick="togglePanel('credentials')">Credentials & Licensing</button>
   </div>
   
@@ -409,19 +416,12 @@ import Footer from "../components/Footer.astro";
     </div>
   </div>
   
-  <div id="panel-coverage" class="disclosure-panel">
+  <div id="panel-areas" class="disclosure-panel">
     <div class="disclosure-panel-content">
-      <h3>Service Coverage</h3>
-      <p><strong>100-Mile Radius from Fallbrook, CA</strong></p>
-      <p>Serving San Diego, Riverside, and Orange Counties</p>
-      <ul>
-        <li><a href="/service-areas/vista" style="color: #000; text-decoration: none;">Vista</a></li>
-        <li><a href="/service-areas/oceanside" style="color: #000; text-decoration: none;">Oceanside</a></li>
-        <li><a href="/service-areas/carlsbad" style="color: #000; text-decoration: none;">Carlsbad</a></li>
-        <li><a href="/service-areas/san-marcos" style="color: #000; text-decoration: none;">San Marcos</a></li>
-        <li><a href="/service-areas/encinitas" style="color: #000; text-decoration: none;">Encinitas</a></li>
-      </ul>
-      <p><a href="/service-areas" style="color: #000; font-weight: 600;">View all service areas →</a></p>
+      <h3>Service Areas</h3>
+      <p><strong>100-mile radius from Fallbrook, CA</strong></p>
+      <p>Serving San Diego County, Riverside County, and Orange County</p>
+      <p style="margin-top: 24px;"><a href="/service-areas" style="color: #000; font-weight: 600; text-decoration: none; border: 2px solid #e0e0e0; padding: 12px 24px; display: inline-block; border-radius: 8px;">View Service Areas →</a></p>
     </div>
   </div>
   
@@ -587,6 +587,7 @@ import Footer from "../components/Footer.astro";
     }
   }
 </style>
+
 
 
 
