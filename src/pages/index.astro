@@ -83,271 +83,8 @@ import Footer from "../components/Footer.astro";
     <a href="mailto:info@safecrackerinc.com">Email + Photos</a>
   </div>
 
-<!-- DESKTOP TRUST LAYER (md+ only) -->
-<style>
-.desktop-trust {
-  display: none;
-}
 
-@media (min-width: 768px) {
-  .mobile-priority {
-    display: none;
-  }
-  
-  .desktop-trust {
-    display: block;
-    background: #fff;
-    font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
-  }
-  
-  .desktop-hero {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 80px 40px;
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    gap: 60px;
-    align-items: start;
-  }
-  
-  .hero-left h1 {
-    font-size: 48px;
-    font-weight: 700;
-    color: #000;
-    margin: 0 0 12px 0;
-    line-height: 1.2;
-  }
-  
-  .hero-left .subline {
-    font-size: 18px;
-    color: #555;
-    margin: 0 0 24px 0;
-  }
-  
-  .hero-left .license {
-    font-size: 15px;
-    color: #666;
-    margin: 0 0 20px 0;
-  }
-  
-  .hero-left .claims {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 28px;
-  }
-  
-  .hero-left .claims span {
-    font-size: 15px;
-    color: #333;
-  }
-  
-  .trust-card {
-    background: #fafafa;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 32px 28px;
-  }
-  
-  .trust-card .reviews {
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 20px;
-    font-weight: 600;
-  }
-  
-  .trust-card .service-area {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .trust-card .service-area span {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 13px;
-    color: #333;
-  }
-  
-  .trust-card .info-line {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 12px;
-    line-height: 1.6;
-  }
-  
-  .trust-card .ctas {
-    margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  
-  .trust-card .ctas a {
-    display: block;
-    padding: 12px;
-    font-size: 16px;
-    color: #000;
-    text-decoration: none;
-    text-align: center;
-    transition: opacity 0.2s;
-  }
-  
-  .trust-card .ctas a:hover {
-    opacity: 0.6;
-  }
-  
-  .proof-bar {
-    background: #f5f5f5;
-    border-top: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 24px 40px;
-  }
-  
-  .proof-bar-inner {
-    max-width: 1240px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-  }
-  
-  .proof-item {
-    text-align: center;
-    font-size: 13px;
-    color: #333;
-  }
-  
-  .proof-item strong {
-    display: block;
-    font-size: 14px;
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 4px;
-  }
-  
-  .services-grid {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 60px 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-  
-  .service-card {
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 32px 24px;
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    transition: border-color 0.2s;
-  }
-  
-  .service-card:hover {
-    border-color: #999;
-  }
-  
-  .service-card h3 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 12px;
-  }
-  
-  .service-card p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.6;
-  }
-}
-</style>
-
-<section class="desktop-trust">
-  <div class="desktop-hero">
-    <div class="hero-left">
-      <h1>Safe & Locksmith Services</h1>
-      <p class="subline">Licensed • Insured • Mobile Service</p>
-      <p class="license">CA License LCO 6687 • BSIS Lic. # PPO______</p>
-      <div class="claims">
-        <span>✓ Upfront pricing</span>
-        <span>✓ Written estimates on request</span>
-      </div>
-    </div>
-    
-    <div class="trust-card">
-      <div class="reviews">★★★★★ Google Reviews (4.9)</div>
-      
-      <div class="service-area">
-        <span>Vista</span>
-        <span>Oceanside</span>
-        <span>Carlsbad</span>
-        <span>San Marcos</span>
-        <span>Encinitas</span>
-      </div>
-      
-      <div class="info-line">Available 7 days/week</div>
-      <div class="info-line">90-day service warranty</div>
-      
-      <div class="ctas">
-        <a href="tel:6197948355">(619) 794-8355</a>
-        <a href="tel:6197948355">Call Now</a>
-        <a href="sms:6197948355">Text Us</a>
-        <a href="mailto:info@safecrackerinc.com">Email</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="proof-bar">
-    <div class="proof-bar-inner">
-      <div class="proof-item">
-        <strong>Licensed</strong>
-        CA LCO 6687
-      </div>
-      <div class="proof-item">
-        <strong>Insured</strong>
-        Fully bonded
-      </div>
-      <div class="proof-item">
-        <strong>Warranty</strong>
-        90-day service
-      </div>
-      <div class="proof-item">
-        <strong>Payments</strong>
-        Cash • Card
-      </div>
-      <div class="proof-item">
-        <strong>Vetted</strong>
-        Background checks
-      </div>
-      <div class="proof-item">
-        <strong>Mobile</strong>
-        We come to you
-      </div>
-    </div>
-  </div>
-  
-  <div class="services-grid">
-    <a href="/services/safe-vault" class="service-card">
-      <h3>Safes & Vaults</h3>
-      <p>Opening, repair, installation, and combination changes</p>
-    </a>
-    
-    <a href="/services/commercial-locksmith" class="service-card">
-      <h3>Commercial</h3>
-      <p>Access control, master keys, door hardware, panic bars</p>
-    </a>
-    
-    <a href="/services/commercial-locksmith" class="service-card">
-      <h3>Residential & Auto</h3>
-      <p>Lockouts, rekeying, lock upgrades, car key services</p>
-    </a>
-  </div>
-
-<!-- DESKTOP TRUST LAYER (md+ only) -->
+<!-- DESKTOP TRUST LAYER WITH PROGRESSIVE DISCLOSURE (md+ only) -->
 <style>
 .desktop-trust {
   display: none;
@@ -522,49 +259,81 @@ import Footer from "../components/Footer.astro";
     line-height: 1.7;
   }
   
-  .footer-trust {
-    background: #fafafa;
-    border-top: 1px solid #e0e0e0;
-    padding: 60px 40px;
-    text-align: center;
+  /* PROGRESSIVE DISCLOSURE */
+  .disclosure-controls {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 40px 40px 20px;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
   }
   
-  .footer-trust h2 {
-    font-size: 28px;
+  .disclosure-controls button {
+    background: transparent;
+    border: 2px solid #e0e0e0;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
+    color: #000;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: border-color 0.2s;
+  }
+  
+  .disclosure-controls button:hover {
+    border-color: #999;
+  }
+  
+  .disclosure-panel {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px 40px;
+    display: none;
+  }
+  
+  .disclosure-panel.active {
+    display: block;
+  }
+  
+  .disclosure-panel-content {
+    background: #fafafa;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 40px;
+  }
+  
+  .disclosure-panel h3 {
+    font-size: 24px;
     font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .disclosure-panel p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
     margin-bottom: 16px;
   }
   
-  .footer-trust .tagline {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 32px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+  .disclosure-panel ul {
+    list-style: none;
+    padding: 0;
   }
   
-  .footer-trust-grid {
-    max-width: 800px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    margin-top: 40px;
-  }
-  
-  .footer-trust-item {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.8;
-  }
-  
-  .footer-trust-item strong {
-    display: block;
+  .disclosure-panel ul li {
     font-size: 15px;
+    color: #555;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .disclosure-panel ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
     font-weight: 700;
-    color: #000;
-    margin-bottom: 8px;
   }
 }
 </style>
@@ -645,28 +414,66 @@ import Footer from "../components/Footer.astro";
     </a>
   </div>
   
-  <div class="footer-trust">
-    <h2>SafeCracker Inc</h2>
-    <p class="tagline">Professional locksmith and safe services across Southern California</p>
-    
-    <div class="footer-trust-grid">
-      <div class="footer-trust-item">
-        <strong>Credentials</strong>
-        CA License LCO 6687<br>
-        Women-Owned Business
-      </div>
-      <div class="footer-trust-item">
-        <strong>Experience</strong>
-        Serving Since 2010<br>
-        Serving San Diego, Riverside & Orange Counties
-      </div>
-      <div class="footer-trust-item">
-        <strong>Availability</strong>
-        24/7 Emergency<br>
-        Fallbrook, CA
-      </div>
+  <!-- PROGRESSIVE DISCLOSURE CONTROLS -->
+  <div class="disclosure-controls">
+    <button onclick="togglePanel('reviews')">View Reviews</button>
+    <button onclick="togglePanel('coverage')">Service Coverage Map</button>
+    <button onclick="togglePanel('credentials')">Credentials & Licensing</button>
+  </div>
+  
+  <!-- COLLAPSIBLE PANELS -->
+  <div id="panel-reviews" class="disclosure-panel">
+    <div class="disclosure-panel-content">
+      <h3>Customer Reviews</h3>
+      <p>★★★★★ 4.9/5 average rating on Google Reviews</p>
+      <p>SafeCracker Inc maintains consistently high ratings for professional locksmith and safe services across San Diego, Riverside, and Orange Counties.</p>
     </div>
   </div>
+  
+  <div id="panel-coverage" class="disclosure-panel">
+    <div class="disclosure-panel-content">
+      <h3>Service Coverage</h3>
+      <p><strong>100-Mile Radius from Fallbrook, CA</strong></p>
+      <p>Serving San Diego, Riverside, and Orange Counties</p>
+      <ul>
+        <li><a href="/service-areas/vista" style="color: #000; text-decoration: none;">Vista</a></li>
+        <li><a href="/service-areas/oceanside" style="color: #000; text-decoration: none;">Oceanside</a></li>
+        <li><a href="/service-areas/carlsbad" style="color: #000; text-decoration: none;">Carlsbad</a></li>
+        <li><a href="/service-areas/san-marcos" style="color: #000; text-decoration: none;">San Marcos</a></li>
+        <li><a href="/service-areas/encinitas" style="color: #000; text-decoration: none;">Encinitas</a></li>
+      </ul>
+      <p><a href="/service-areas" style="color: #000; font-weight: 600;">View all service areas →</a></p>
+    </div>
+  </div>
+  
+  <div id="panel-credentials" class="disclosure-panel">
+    <div class="disclosure-panel-content">
+      <h3>Credentials & Licensing</h3>
+      <ul>
+        <li>CA Locksmith License LCO 6687</li>
+        <li>Women-Owned Business</li>
+        <li>Fully Insured & Bonded</li>
+        <li>Background-Checked Technicians</li>
+        <li>Serving Since 2010</li>
+        <li>90-Day Service Warranty</li>
+      </ul>
+    </div>
+  </div>
+  
+  <script>
+    function togglePanel(panelId) {
+      const panels = document.querySelectorAll('.disclosure-panel');
+      const targetPanel = document.getElementById('panel-' + panelId);
+      
+      panels.forEach(panel => {
+        if (panel === targetPanel) {
+          panel.classList.toggle('active');
+        } else {
+          panel.classList.remove('active');
+        }
+      });
+    }
+  </script>
 </section><Footer />
 </BaseLayout>
 
@@ -801,6 +608,7 @@ import Footer from "../components/Footer.astro";
     }
   }
 </style>
+
 
 
 
