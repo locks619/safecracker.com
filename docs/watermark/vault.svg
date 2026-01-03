@@ -1,0 +1,33 @@
+﻿<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="100" y="50" width="600" height="900" stroke="currentColor" stroke-width="4" fill="none"/>
+  <rect x="120" y="70" width="560" height="860" stroke="currentColor" stroke-width="2" fill="none"/>
+  <rect x="80" y="150" width="60" height="80" stroke="currentColor" stroke-width="3" fill="none"/>
+  <circle cx="110" cy="190" r="15" stroke="currentColor" stroke-width="2" fill="none"/>
+  <rect x="80" y="400" width="60" height="80" stroke="currentColor" stroke-width="3" fill="none"/>
+  <circle cx="110" cy="440" r="15" stroke="currentColor" stroke-width="2" fill="none"/>
+  <rect x="80" y="650" width="60" height="80" stroke="currentColor" stroke-width="3" fill="none"/>
+  <circle cx="110" cy="690" r="15" stroke="currentColor" stroke-width="2" fill="none"/>
+  <circle cx="400" cy="500" r="120" stroke="currentColor" stroke-width="4" fill="none"/>
+  <circle cx="400" cy="500" r="100" stroke="currentColor" stroke-width="2" fill="none"/>
+  <circle cx="400" cy="500" r="80" stroke="currentColor" stroke-width="2" fill="none"/>
+  <line x1="400" y1="380" x2="400" y2="395" stroke="currentColor" stroke-width="3"/>
+  <line x1="400" y1="605" x2="400" y2="620" stroke="currentColor" stroke-width="3"/>
+  <line x1="280" y1="500" x2="295" y2="500" stroke="currentColor" stroke-width="3"/>
+  <line x1="505" y1="500" x2="520" y2="500" stroke="currentColor" stroke-width="3"/>
+  <polygon points="400,420 395,440 405,440" fill="currentColor"/>
+  <rect x="500" y="480" width="120" height="40" rx="5" stroke="currentColor" stroke-width="3" fill="none"/>
+  <circle cx="580" cy="500" r="12" stroke="currentColor" stroke-width="2" fill="none"/>
+  <rect x="690" y="200" width="30" height="15" stroke="currentColor" stroke-width="2" fill="none"/>
+  <rect x="690" y="350" width="30" height="15" stroke="currentColor" stroke-width="2" fill="none"/>
+  <rect x="690" y="500" width="30" height="15" stroke="currentColor" stroke-width="2" fill="none"/>
+  <rect x="690" y="650" width="30" height="15" stroke="currentColor" stroke-width="2" fill="none"/>
+  <rect x="690" y="800" width="30" height="15" stroke="currentColor" stroke-width="2" fill="none"/>
+  <line x1="100" y1="30" x2="700" y2="30" stroke="currentColor" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="100" y1="30" x2="100" y2="40" stroke="currentColor" stroke-width="1"/>
+  <line x1="700" y1="30" x2="700" y2="40" stroke="currentColor" stroke-width="1"/>
+  <line x1="200" y1="50" x2="200" y2="950" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+  <line x1="300" y1="50" x2="300" y2="950" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+  <line x1="400" y1="50" x2="400" y2="950" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+  <line x1="500" y1="50" x2="500" y2="950" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+  <line x1="600" y1="50" x2="600" y2="950" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+</svg>
