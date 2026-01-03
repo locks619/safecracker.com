@@ -1,25 +1,18 @@
-﻿<style is:global>
-  .hero-forced{background:#0b0f14!important;color:#fff!important;padding:60px 20px!important;position:relative!important;overflow:visible!important}
-  .hero-grid{display:grid!important;grid-template-columns:1fr!important;gap:40px!important;max-width:1200px!important;margin:0 auto!important;align-items:center!important}
-  .hero-img-wrap{display:block!important}
-  .hero-img-wrap img{max-width:480px!important;width:100%!important;height:auto!important;display:block!important;margin:0!important}
-  .hero-text{color:#fff!important}
-  .hero-text *{color:#fff!important;opacity:1!important;visibility:visible!important;transform:none!important}
-  @media (max-width:900px){
-    .hero-grid{grid-template-columns:1fr!important;text-align:center!important}
-    .hero-img-wrap{order:-1!important;margin-bottom:2rem!important;text-align:center!important}
-    .hero-img-wrap img{max-width:420px!important;width:85vw!important;margin:0 auto!important}
-    .hero-text{text-align:center!important}
-  }
-</style>
----
+﻿---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<BaseLayout title="Safecracker Inc - Licensed Locksmith & Safe Services" description="Professional locksmith and safe services in Southern California. CA License LCO 6687. Call, text, or email us today.">
-  <Header />
+
+<BaseLayout>
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Header />
 
   <!-- Hero Section with Dual Watermark System -->
   <section class="hero-forced">
@@ -32,15 +25,7 @@ import Footer from "../components/Footer.astro";
          loading="eager"
          decoding="async" />
   </div>
-    </BaseLayout>
-
-
-
-
-
-
-
-
+</BaseLayout>
 
 
 
