@@ -1,42 +1,9 @@
-﻿.hero {
-  position: relative;
-  background: #0b0f14;
-  padding: 4rem 2rem;
-  color: #fff;
+﻿/* Minimal global styles - hero handled locally in index.astro */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.hero-inner {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 2rem;
-}
-.hero-image {
-  display: flex;
-  justify-content: center;
-}
-.hero-image img {
-  max-width: 420px;
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.hero-content {
-  text-align: center;
-}
-@media(min-width:900px){
-  .hero-inner {
-    grid-template-columns: 45% 55%;
-    gap: 3rem;
-  }
-  .hero-image {
-    justify-content: flex-start;
-  }
-  .hero-image img {
-    max-width: 480px;
-  }
-  .hero-content {
-    text-align: left;
-  }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
