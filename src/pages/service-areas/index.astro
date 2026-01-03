@@ -1,0 +1,51 @@
+﻿---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+<BaseLayout title="Service Areas - SafeCracker Inc">
+<Header />
+
+<main style="max-width: 1240px; margin: 0 auto; padding: 60px 40px; font-family: 'Libre Baskerville', Georgia, serif;">
+  <h1 style="font-size: 48px; font-weight: 700; margin-bottom: 20px;">Service Areas</h1>
+  <p style="font-size: 18px; color: #555; margin-bottom: 60px;">Mobile locksmith and safe services across North San Diego County. CA License LCO 6687.</p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+    <a href="/service-areas/vista" style="border: 2px solid #e0e0e0; padding: 28px; border-radius: 12px; text-decoration: none; color: #000;">
+      <h2 style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">Vista</h2>
+      <p style="font-size: 14px; color: #666;">Residential, commercial, safes</p>
+    </a>
+
+    <a href="/service-areas/oceanside" style="border: 2px solid #e0e0e0; padding: 28px; border-radius: 12px; text-decoration: none; color: #000;">
+      <h2 style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">Oceanside</h2>
+      <p style="font-size: 14px; color: #666;">Residential, commercial, safes</p>
+    </a>
+
+    <a href="/service-areas/carlsbad" style="border: 2px solid #e0e0e0; padding: 28px; border-radius: 12px; text-decoration: none; color: #000;">
+      <h2 style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">Carlsbad</h2>
+      <p style="font-size: 14px; color: #666;">Residential, commercial, safes</p>
+    </a>
+
+    <a href="/service-areas/san-marcos" style="border: 2px solid #e0e0e0; padding: 28px; border-radius: 12px; text-decoration: none; color: #000;">
+      <h2 style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">San Marcos</h2>
+      <p style="font-size: 14px; color: #666;">Residential, commercial, safes</p>
+    </a>
+
+    <a href="/service-areas/encinitas" style="border: 2px solid #e0e0e0; padding: 28px; border-radius: 12px; text-decoration: none; color: #000;">
+      <h2 style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">Encinitas</h2>
+      <p style="font-size: 14px; color: #666;">Residential, commercial, safes</p>
+    </a>
+  </div>
+
+  <div style="margin-top: 80px; text-align: center; padding: 40px; background: #fafafa; border-radius: 12px;">
+    <p style="font-size: 18px; margin-bottom: 20px;">150-Mile Service Radius • Based in Fallbrook, CA</p>
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+      <a href="tel:6197948355" style="font-size: 17px; color: #000; text-decoration: none;">Call (619) 794-8355</a>
+      <a href="sms:6197948355" style="font-size: 17px; color: #000; text-decoration: none;">Text Us</a>
+      <a href="mailto:info@safecrackerinc.com" style="font-size: 17px; color: #000; text-decoration: none;">Email</a>
+    </div>
+  </div>
+</main>
+
+<Footer />
+</BaseLayout>
