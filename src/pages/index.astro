@@ -106,33 +106,18 @@ import Footer from "../components/Footer.astro";
     margin: 0 auto;
     padding: 80px 40px 60px;
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 80px;
-    align-items: start;
+    display: flex; justify-content: center;
+    
+    align-items: center;
   }
   
-  .hero-left h1 {
-    font-size: 52px;
-    font-weight: 700;
-    color: #000;
-    margin: 0 0 16px 0;
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-  }
-  
-  .hero-left .subline {
+.hero-left .subline {
     font-size: 20px;
     color: #555;
     margin: 0 0 28px 0;
   }
   
-  .hero-left .license {
-    font-size: 16px;
-    color: #666;
-    margin: 0 0 32px 0;
-  }
-  
-.trust-card {
+.trust-card { max-width: 480px;
     background: #fafafa;
     border: 2px solid #e0e0e0;
     border-radius: 12px;
@@ -329,13 +314,7 @@ import Footer from "../components/Footer.astro";
 
 <section class="desktop-trust">
   <div class="desktop-hero">
-    <div class="hero-left">
-      <h1>SafeCracker Inc</h1>
-      <p class="subline">Licensed • Insured • Mobile Locksmith & Safe Services</p>
-      <p class="license">CA License LCO 6687</p>
-    </div>
-    
-    <div class="trust-card">
+<div class="trust-card">
       <div class="reviews">★★★★★ Google Reviews (4.9)</div>
       
       <div class="service-area">
@@ -593,6 +572,7 @@ import Footer from "../components/Footer.astro";
     }
   }
 </style>
+
 
 
 
