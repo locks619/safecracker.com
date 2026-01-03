@@ -9,6 +9,18 @@ import Footer from "../components/Footer.astro";
 
   <!-- Hero Section with Dual Watermark System -->
   <section class="relative w-full min-h-screen overflow-visible bg-white">
+<div class="heroWatermark" aria-hidden="true">
+  <img src="/watermark/vault.svg" alt="" />
+</div>
+<div class="heroInner">
+  <div class="heroVisual" aria-hidden="true">
+    <img src="/hero/phones.webp"
+         alt="Safecracker Inc mobile preview"
+         width="900"
+         height="1200"
+         loading="eager"
+         decoding="async" />
+  </div>
     <!-- GUARANTEED WATERMARK RENDER -->
     <img
       src="/watermark/vault.svg"
@@ -141,6 +153,7 @@ import Footer from "../components/Footer.astro";
 
   <Footer />
 </BaseLayout>
+
 
 
 
