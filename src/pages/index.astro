@@ -4,33 +4,95 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-
 <BaseLayout>
----
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
----
+  <Header />
 
-<Header />
+  <section class="hero-test">
+    <div class="hero-test-inner">
+      <div class="hero-test-image">
+        <img src="/hero/phones.webp" alt="Safecracker on phone" />
+      </div>
+      <div class="hero-test-content">
+        <h1>Safecracker Inc</h1>
+        <p>Licensed Locksmith & Safe Services</p>
+        <p>(619) 794-8355</p>
+        <div class="actions">
+          <a href="tel:16197948355">Call Now</a>
+          <a href="sms:16197948355">Text Us</a>
+          <a href="/contact">Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Hero Section with Dual Watermark System -->
-  <section class="hero">
-<div class="hero-container">
-  <div class="hero-image" aria-hidden="true">
-    <img src="/hero/phones.webp"
-         alt="Safecracker Inc mobile preview"
-         width="900"
-         height="1200"
-         loading="eager"
-         decoding="async" />
-  </div>
+  <Footer />
 </BaseLayout>
 
-
-
-
-
-
-
-
+<style data-hero-test>
+.hero-test {
+  background: #0b0f14;
+  padding: 96px 32px;
+}
+.hero-test-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 60px;
+  align-items: center;
+}
+.hero-test-image img {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,.3));
+}
+.hero-test-content { color: #fff; }
+.hero-test-content h1 {
+  font-size: clamp(40px, 4vw, 64px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.hero-test-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: .9;
+}
+.hero-test-content p:nth-of-type(2) {
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 1;
+  margin-bottom: 32px;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.actions a {
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.actions a:nth-child(1) {
+  background: #fff;
+  color: #0b0f14;
+}
+.actions a:nth-child(2),
+.actions a:nth-child(3) {
+  border: 2px solid rgba(255,255,255,.4);
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .hero-test-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-test-image { order: -1; }
+  .actions { flex-direction: column; }
+  .actions a { width: 100%; }
+}
+</style>
