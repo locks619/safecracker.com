@@ -6,6 +6,80 @@ import Footer from "../components/Footer.astro";
 
 <BaseLayout>
   <Header />
+<style>
+.mobile-priority {
+  background: #fff;
+  padding: 24px 20px;
+  text-align: center;
+}
+.mobile-priority h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.01em;
+}
+.mobile-priority .tagline {
+  font-size: 16px;
+  color: #555;
+  margin: 0 0 24px 0;
+}
+.mobile-priority .phone {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 32px 0;
+  display: block;
+  text-decoration: none;
+}
+.mobile-priority .ctas {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.mobile-priority .ctas a {
+  display: block;
+  padding: 16px;
+  min-height: 56px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.mobile-priority .ctas a:nth-child(1) {
+  background: #000;
+  color: #fff;
+}
+.mobile-priority .ctas a:nth-child(2) {
+  background: #f5f5f5;
+  color: #000;
+  border: 2px solid #ddd;
+}
+.mobile-priority .ctas a:nth-child(3) {
+  background: #fff;
+  color: #000;
+  border: 2px solid #ddd;
+}
+</style>
+
+<section class="mobile-priority">
+  <h1>SafeCracker Inc</h1>
+  <p class="tagline">Licensed Locksmith & Safe Services</p>
+  
+  <a href="tel:6197948355" class="phone">(619) 794-8355</a>
+  
+  <div class="ctas">
+    <a href="tel:6197948355">📞 Call Now</a>
+    <a href="sms:6197948355">💬 Text Us</a>
+    <a href="mailto:info@safecrackerinc.com">✉️ Email + Photos</a>
+  </div>
+</section>
 
   <section class="hero-test">
     <div class="hero-test-inner">
@@ -159,6 +233,7 @@ import Footer from "../components/Footer.astro";
     }
   }
 </style>
+
 
 
 
