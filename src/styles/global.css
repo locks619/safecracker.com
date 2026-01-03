@@ -1,9 +1,81 @@
-﻿/* Minimal global styles - hero handled locally in index.astro */
-* {
+﻿/* Global Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Cormorant Garamond', serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+/* Hero Layout - Clean, No Forced Visibility */
+.hero {
+  background: #0b0f14;
+  color: #fff;
+  padding: 4rem 1.5rem;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.hero-image {
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+/* Desktop Layout: Image Left 45% | Content Right 55% */
+@media (min-width: 900px) {
+  .hero-container {
+    grid-template-columns: 45fr 55fr;
+    gap: 4rem;
+  }
+  
+  .hero-image {
+    text-align: left;
+  }
+  
+  .hero-image img {
+    max-width: 480px;
+    margin: 0;
+  }
+  
+  .hero-content {
+    text-align: left;
+  }
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
 }
