@@ -1,19 +1,19 @@
 {
-    "name":  "safecracker-com",
-    "type":  "module",
-    "version":  "1.0.0",
-    "description":  "Professional locksmith and safe services - CA License LCO 6687",
-    "scripts":  {
-                    "preview":  "npx astro preview",
-                    "build":  "npx astro build",
-                    "dev":  "npx astro dev"
-                },
-    "dependencies":  {
-                         "astro":  "^4.0.0"
-                     },
-    "devDependencies":  {
-                            "@astrojs/tailwind":  "^5.0.0",
-                            "autoprefixer":  "^10.4.16",
-                            "tailwindcss":  "^3.4.0"
-                        }
+    "name": "safecracker-com",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "Professional locksmith and safe services - CA License LCO 6687",
+    "scripts": {
+        "preview": "npx astro preview",
+        "build": "npx astro build --outDir docs",
+        "dev": "npx astro dev"
+    },
+    "dependencies": {
+        "astro": "^4.0.0"
+    },
+    "devDependencies": {
+        "@astrojs/tailwind": "^5.0.0",
+        "autoprefixer": "^10.4.16",
+        "tailwindcss": "^3.4.0"
+    }
 }
