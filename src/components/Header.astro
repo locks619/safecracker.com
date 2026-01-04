@@ -54,6 +54,69 @@
   <div style="display: flex; justify-content: flex-end; align-items: center;">
     <span>☰</span>
   </div>
+<!-- Desktop-only nav dropdowns (desktop-nav-dropdowns) -->
+<nav class="desktop-nav-dropdowns" aria-label="Primary">
+  <div class="nav-dd">
+    <a class="nav-top" href="/safes">Safes &amp; Vaults</a>
+    <div class="nav-menu" role="menu">
+      <a role="menuitem" href="/safes/opening">Safe Openings</a>
+      <a role="menuitem" href="/safes/repair">Safe Repairs</a>
+      <a role="menuitem" href="/safes/combination-changes">Combination Changes</a>
+      <a role="menuitem" href="/safes/damage-recovery">Damage Recovery</a>
+      <a role="menuitem" href="/safes/commercial-high-security">Commercial &amp; High-Security</a>
+      <a role="menuitem" href="/safes/specialty">Specialty / Unlisted Services</a>
+    </div>
+  </div>
+
+  <div class="nav-dd">
+    <a class="nav-top" href="/services/commercial-locksmith">Commercial Locksmith</a>
+    <div class="nav-menu" role="menu">
+      <a role="menuitem" href="/services/master-keying">Master Keying</a>
+      <a role="menuitem" href="/services/door-hardware">Door Hardware</a>
+      <a role="menuitem" href="/services/door-closers">Door Closers</a>
+      <a role="menuitem" href="/services/exit-devices">Exit Devices</a>
+      <a role="menuitem" href="/services/thresholds">Thresholds</a>
+    </div>
+  </div>
+
+  <div class="nav-dd">
+    <a class="nav-top" href="/services/residential-locksmith">Residential Locksmith</a>
+    <div class="nav-menu" role="menu">
+      <a role="menuitem" href="/services/lockouts">Lockouts</a>
+      <a role="menuitem" href="/services/rekeying">Rekeying</a>
+      <a role="menuitem" href="/services/security-upgrades">Security Upgrades</a>
+    </div>
+  </div>
+
+  <a class="nav-top" href="/access-control">Access Control</a>
+  <a class="nav-top" href="/auto-operators">Auto Operators</a>
+  <a class="nav-top" href="/automatic-gates">Automatic Gates</a>
+</nav>
+
+<style>
+  /* desktop-nav-dropdowns: DESKTOP ONLY (mobile unaffected) */
+  @media (max-width: 1023px){ .desktop-nav-dropdowns{ display:none !important; } }
+  @media (min-width: 1024px){
+    .desktop-nav-dropdowns{
+      display:flex; align-items:center; gap:20px;
+      font-size:14px; line-height:1;
+    }
+    .desktop-nav-dropdowns a{ text-decoration:none; color:#111; font-weight:500; }
+    .nav-dd{ position:relative; }
+    .nav-top{ display:inline-flex; align-items:center; gap:6px; padding:6px 2px; }
+    .nav-menu{
+      display:none; position:absolute; top:calc(100% + 8px); left:0;
+      background:#fff; border:1px solid rgba(0,0,0,.10); border-radius:10px;
+      padding:8px 0; min-width:230px; box-shadow:0 10px 30px rgba(0,0,0,.10);
+      z-index:9999;
+    }
+    .nav-menu a{
+      display:block; padding:10px 14px; font-weight:500; color:#444; white-space:nowrap;
+    }
+    .nav-menu a:hover{ background:rgba(0,0,0,.04); color:#111; }
+    .nav-dd:hover .nav-menu{ display:block; }
+  }
+</style>
 </header>
 
 <header class="header-desktop">
@@ -68,5 +131,69 @@
       <a href="tel:6197948355" class="header-phone">(619) 794-8355</a>
     </nav>
   </div>
+<!-- Desktop-only nav dropdowns (desktop-nav-dropdowns) -->
+<nav class="desktop-nav-dropdowns" aria-label="Primary">
+  <div class="nav-dd">
+    <a class="nav-top" href="/safes">Safes &amp; Vaults</a>
+    <div class="nav-menu" role="menu">
+      <a role="menuitem" href="/safes/opening">Safe Openings</a>
+      <a role="menuitem" href="/safes/repair">Safe Repairs</a>
+      <a role="menuitem" href="/safes/combination-changes">Combination Changes</a>
+      <a role="menuitem" href="/safes/damage-recovery">Damage Recovery</a>
+      <a role="menuitem" href="/safes/commercial-high-security">Commercial &amp; High-Security</a>
+      <a role="menuitem" href="/safes/specialty">Specialty / Unlisted Services</a>
+    </div>
+  </div>
+
+  <div class="nav-dd">
+    <a class="nav-top" href="/services/commercial-locksmith">Commercial Locksmith</a>
+    <div class="nav-menu" role="menu">
+      <a role="menuitem" href="/services/master-keying">Master Keying</a>
+      <a role="menuitem" href="/services/door-hardware">Door Hardware</a>
+      <a role="menuitem" href="/services/door-closers">Door Closers</a>
+      <a role="menuitem" href="/services/exit-devices">Exit Devices</a>
+      <a role="menuitem" href="/services/thresholds">Thresholds</a>
+    </div>
+  </div>
+
+  <div class="nav-dd">
+    <a class="nav-top" href="/services/residential-locksmith">Residential Locksmith</a>
+    <div class="nav-menu" role="menu">
+      <a role="menuitem" href="/services/lockouts">Lockouts</a>
+      <a role="menuitem" href="/services/rekeying">Rekeying</a>
+      <a role="menuitem" href="/services/security-upgrades">Security Upgrades</a>
+    </div>
+  </div>
+
+  <a class="nav-top" href="/access-control">Access Control</a>
+  <a class="nav-top" href="/auto-operators">Auto Operators</a>
+  <a class="nav-top" href="/automatic-gates">Automatic Gates</a>
+</nav>
+
+<style>
+  /* desktop-nav-dropdowns: DESKTOP ONLY (mobile unaffected) */
+  @media (max-width: 1023px){ .desktop-nav-dropdowns{ display:none !important; } }
+  @media (min-width: 1024px){
+    .desktop-nav-dropdowns{
+      display:flex; align-items:center; gap:20px;
+      font-size:14px; line-height:1;
+    }
+    .desktop-nav-dropdowns a{ text-decoration:none; color:#111; font-weight:500; }
+    .nav-dd{ position:relative; }
+    .nav-top{ display:inline-flex; align-items:center; gap:6px; padding:6px 2px; }
+    .nav-menu{
+      display:none; position:absolute; top:calc(100% + 8px); left:0;
+      background:#fff; border:1px solid rgba(0,0,0,.10); border-radius:10px;
+      padding:8px 0; min-width:230px; box-shadow:0 10px 30px rgba(0,0,0,.10);
+      z-index:9999;
+    }
+    .nav-menu a{
+      display:block; padding:10px 14px; font-weight:500; color:#444; white-space:nowrap;
+    }
+    .nav-menu a:hover{ background:rgba(0,0,0,.04); color:#111; }
+    .nav-dd:hover .nav-menu{ display:block; }
+  }
+</style>
 </header>
+
 
