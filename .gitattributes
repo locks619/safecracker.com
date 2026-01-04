@@ -1,2 +1,5 @@
 ﻿* text=auto eol=lf
 *.ps1 text eol=crlf
+docs/CNAME text eol=lf
+
+docs/.nojekyll text eol=lf
