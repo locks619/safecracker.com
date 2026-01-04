@@ -7,7 +7,7 @@
     "preview": "npx astro preview",
     "build": "npx astro build --outDir docs",
     "dev": "npx astro dev",
-    "postbuild": "node scripts/postbuild-pages.js"
+    "postbuild": "node scripts/postbuild-pages.mjs"
   },
   "dependencies": {
     "astro": "^4.0.0"
