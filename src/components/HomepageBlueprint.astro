@@ -45,7 +45,7 @@
     <span>Insured & Bonded</span>
     <span>90-Day Warranty</span>
     <span>All Payment Types</span>
-    <span>Vetted Technicians</span>
+    <span>Experienced Technicians</span>
     <span>Mobile Service</span>
   </section>
 
@@ -71,12 +71,12 @@
   <!-- Section 5: Service Area Statement -->
   <section class="service-area">
     <h2>Serving San Diego County, Riverside County, and Orange County</h2>
-    <p>100-mile radius from Fallbrook, CA</p>
+    
     <details>
       <summary>Show Cities ▼</summary>
       <p>Vista • Oceanside • Carlsbad • San Marcos • Encinitas • Escondido • Temecula • Murrieta • Lake Elsinore • San Clemente • Dana Point • San Juan Capistrano</p>
     </details>
-    <a href="/service-areas">View All Service Areas →</a>
+    
   </section>
 
   <!-- Section 6: Why Choose Us -->
@@ -146,15 +146,34 @@
 <style>
   .homepage-container { max-width: 1240px; margin: 0 auto; padding: 20px; }
   .mobile-hero { text-align: center; padding: 40px 20px; }
-  .mobile-hero h1 { font-size: 32px; margin-bottom: 8px; }
+  .mobile-hero h1 { font-size: 40px; font-family: 'Georgia', 'Times New Roman', serif; margin-bottom: 8px; }
   .mobile-hero .license { font-weight: 600; margin-bottom: 12px; }
   .mobile-hero .tagline { color: #666; margin-bottom: 20px; }
   .mobile-hero .phone { font-size: 24px; margin-bottom: 20px; }
   .mobile-hero .phone a { color: #000; text-decoration: none; }
   .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-  .cta-primary, .cta-secondary { padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; }
-  .cta-primary { background: #000; color: #fff; }
-  .cta-secondary { border: 2px solid #000; color: #000; }
+  .cta-primary, .cta-secondary { 
+    padding: 12px 24px; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    font-weight: 600;
+    border: 2px solid #000;
+    transition: all 0.2s;
+  }
+  .cta-primary { 
+    background: #000; 
+    color: #fff; 
+  }
+  .cta-primary:hover {
+    background: #333;
+  }
+  .cta-secondary { 
+    background: #fff;
+    color: #000; 
+  }
+  .cta-secondary:hover {
+    background: #f5f5f5;
+  }
   
   .trust-stack, .proof-bar, .services-grid, .service-area, .why-choose, .secondary-cta, .faq { 
     padding: 40px 20px; border-top: 1px solid #e0e0e0; 
@@ -169,8 +188,13 @@
   .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
   .service-card { border: 2px solid #e0e0e0; border-radius: 8px; padding: 24px; }
   .service-card h3 { margin-bottom: 12px; }
-  .service-card p { margin-bottom: 16px; color: #666; }
-  .service-card a { color: #000; text-decoration: none; font-weight: 600; }
+  .service-card h3 a { color: #000; text-decoration: none; font-weight: 600; }
+  .service-card h3 a:hover { text-decoration: underline; }
+  .service-submenu { list-style: none; padding: 0; margin: 0; display: none; }
+  .service-card:hover .service-submenu { display: block; }
+  .service-submenu li { margin: 8px 0; }
+  .service-submenu a { color: #666; text-decoration: none; font-size: 14px; }
+  .service-submenu a:hover { color: #000; text-decoration: underline; }
   
   .service-area { text-align: center; }
   .service-area h2 { margin-bottom: 12px; }
@@ -184,10 +208,9 @@
   .secondary-cta { text-align: center; }
   .secondary-cta h2 { margin-bottom: 16px; }
   
-  .faq details { border-top: 1px solid #e0e0e0; padding: 16px 0; }
-  .faq summary { font-weight: 600; cursor: pointer; }
-  .faq p { margin-top: 12px; color: #666; }
+  .faq-item { margin-bottom: 24px; }\n  .faq-item h3 { font-size: 18px; margin-bottom: 8px; font-weight: 600; }\n  .faq-item p { color: #666; line-height: 1.6; }
 </style>
+
 
 
 
