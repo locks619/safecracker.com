@@ -1,12 +1,13 @@
-﻿import { writeFileSync, existsSync } from "node:fs";
-import { mkdirSync } from "node:fs";
+﻿import { writeFileSync, existsSync, mkdirSync } from "node:fs";
 
 mkdirSync("docs", { recursive: true });
 
-// keep custom domain
-writeFileSync("docs/CNAME", "safecrackerinc.com\n", "utf8");
+// Only create these if missing (prevents dirty working tree after build)
+if (!existsSync("docs/CNAME")) {
+  writeFileSync("docs/CNAME", "safecrackerinc.com\n", "utf8");
+}
+if (!existsSync("docs/.nojekyll")) {
+  writeFileSync("docs/.nojekyll", "", "utf8");
+}
 
-// prevent Jekyll from eating underscore paths
-writeFileSync("docs/.nojekyll", "", "utf8");
-
-console.log("postbuild: ensured docs/CNAME + docs/.nojekyll");
+console.log("postbuild: ensured docs/CNAME + docs/.nojekyll (no-rewrite)");
