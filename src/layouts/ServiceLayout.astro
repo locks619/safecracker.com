@@ -27,6 +27,9 @@ const { title, description, heroImage } = Astro.props;
     font-size:14px; white-space:nowrap;
     text-decoration:none;
   }
+  .nav-brand { display: flex; flex-direction: column; gap: 2px; }
+  .nav-brand a { text-decoration: none; }
+  .nav-license { font-size: 10px; opacity: 0.7; letter-spacing: 0.05em; font-weight: 400; }
   .nav{
     display:flex; align-items:center; gap:14px;
     flex-wrap:wrap;
@@ -89,32 +92,62 @@ const { title, description, heroImage } = Astro.props;
 <body>
 <header class="site-header" data-site-nav>
   <div class="nav-wrap">
-    <a class="nav-brand" href="/">SafeCracker Inc</a>
+    <div class="nav-brand">
+      <a href="/">SafeCracker Inc</a>
+      <div class="nav-license">CA LCO 6687 Ã¢â‚¬Â¢ Insured</div>
+    </div>
 
     <nav class="nav" aria-label="Primary">
       <a class="nav-link" href="/">Home</a>
 
       <div class="nav-dd">
-        <a class="nav-link" href="/services">Services</a>
-        <div class="nav-dd-menu" role="menu" aria-label="Services menu">
-          <a href="/services/residential-locksmith">Residential</a>
-          <a href="/services/commercial-locksmith">Commercial</a>
-          <a href="/services/automotive-locksmith">Automotive</a>
-          <a href="/services/locksmith">General Locksmith</a>
-        </div>
-      </div>
+  <a class="nav-link" href="/services">Services</a>
+  <div class="nav-dd-menu" role="menu" aria-label="Services menu">
+    <a href="/services/residential-locksmith">Residential</a>
+    <a href="/services/commercial-locksmith">Commercial</a>
+    <a href="/services/automotive-locksmith">Automotive</a>
+    <a href="/access-control">Access Control</a>
+    <a href="/automatic-gates">Gates</a>
+    <a href="/auto-operators">Auto Operators</a>
+    <a href="/services/door-hardware">Door Hardware</a>
+    <a href="/services/exit-devices">Exit Devices</a>
+    <a href="/services/door-closers">Door Closers</a>
+    <a href="/services/rekeying">Rekeying</a>
+    <a href="/services/lockouts">Lockouts</a>
+    <a href="/services/master-keying">Master Keying</a>
+    <a href="/services/security-upgrades">Security Upgrades</a>
+    <a href="/services/thresholds">Thresholds</a>
+  </div>
+</div>
 
       <div class="nav-dd">
-        <a class="nav-link" href="/safes">Safes</a>
-        <div class="nav-dd-menu" role="menu" aria-label="Safes menu">
-          <a href="/safes/opening">Safe Opening</a>
-          <a href="/safes/repair">Safe Repair</a>
-          <a href="/safes/installation">Safe Installation</a>
-          <a href="/safes/combination-changes">Combo Changes</a>
+  <a class="nav-link" href="/safes">Safes</a>
+  <div class="nav-dd-menu" role="menu" aria-label="Safes menu">
+    <a href="/safes/opening">Opening</a>
+    <a href="/safes/repair">Repair</a>
+    <a href="/safes/installation">Installation</a>
+    <a href="/safes/combination-changes">Combination Changes</a>
+    <a href="/safes/commercial-high-security">Commercial High Security</a>
+    <a href="/safes/damage-recovery">Damage Recovery</a>
+    <a href="/safes/specialty">Specialty</a>
+  </div>
+</div>
+
+      <div class="nav-dd">
+        <a class="nav-link" href="/service-areas">Service Areas</a>
+        <div class="nav-dd-menu" role="menu" aria-label="Service Areas menu">
+          <div style="opacity:0.5;font-size:11px;padding:4px 10px;">San Diego County</div>
+          <a href="/service-areas/vista">Vista</a>
+          <a href="/service-areas/oceanside">Oceanside</a>
+          <a href="/service-areas/carlsbad">Carlsbad</a>
+          <a href="/service-areas/san-marcos">San Marcos</a>
+          <a href="/service-areas/encinitas">Encinitas</a>
+          <div style="opacity:0.5;font-size:11px;padding:4px 10px;margin-top:8px;">Other Counties</div>
+          <a href="/service-areas">Riverside County</a>
+          <a href="/service-areas">Orange County</a>
+          <a href="/service-areas">San Bernardino County</a>
         </div>
       </div>
-
-      <a class="nav-link" href="/service-areas">Service Areas</a>
       <a class="nav-link" href="/learning-center">Learning Center</a>
       <a class="nav-link" href="/contact">Contact</a>
 
@@ -125,3 +158,4 @@ const { title, description, heroImage } = Astro.props;
   <slot />
 </body>
 </html>
+
