@@ -8,3 +8,7 @@ dist/
 AFTER*.png
 
 _backup/
+# never commit local backups
+*.bak-*
+*.backup
+*.tmp
