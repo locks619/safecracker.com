@@ -62,7 +62,7 @@ collections:
         fields:
           - { label: "Business Name", name: "name", widget: "string", default: "Safecracker Locksmith & Safe Services" }
           - { label: "Phone", name: "phone", widget: "string", default: "(619) 794-8355" }
-          - { label: "License", name: "license", widget: "string", default: "LCO 6687" }
+          - { label: "License", name: "license", widget: "string", default: "LCO6517" }
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Service Radius", name: "radius", widget: "string", default: "150 miles" }
           - { label: "Emergency Available", name: "emergency", widget: "boolean", default: true }
