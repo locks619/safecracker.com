@@ -25,20 +25,38 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  # ─── JOB GALLERY (phone uploads) ───
+  # ─── JOB GALLERY (Op Order style) ───
   - name: "gallery"
     label: "Job Gallery"
     folder: "docs/content/gallery"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      # ── HEADER ──
       - { label: "Job Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Category", name: "category", widget: "select", options: ["Commercial Locksmith", "Safe & Vault", "Gate Automation", "Door Hardware", "Emergency Lockout", "Access Control"] }
-      - { label: "Location", name: "location", widget: "string", required: false }
-      - { label: "Photo", name: "image", widget: "image" }
+      - { label: "Category", name: "category", widget: "select", options: ["Commercial Locksmith", "Safe & Vault", "Gate Automation", "Door Hardware", "Emergency Lockout", "Access Control", "Mobile Welding"] }
+      - { label: "Location (city/area)", name: "location", widget: "string", required: false }
+      # ── MISSION ──
+      - { label: "Mission / Customer Request", name: "mission", widget: "text", required: false, hint: "What did the customer need? What was the call about?" }
+      - { label: "Safe/Lock Make & Model", name: "make_model", widget: "string", required: false, hint: "e.g. S&G 6120, Medeco Maxum, LiftMaster LA400" }
+      - { label: "Issues / Complications", name: "issues", widget: "text", required: false, hint: "What made this job difficult? Broken bolt, rusted mechanism, etc." }
+      # ── METHOD ──
+      - { label: "Intended Opening Method", name: "intended_method", widget: "string", required: false, hint: "e.g. Manipulation, drill point, pick, bypass, scope" }
+      - { label: "Actual Method Used", name: "actual_method", widget: "string", required: false, hint: "What actually worked?" }
+      - { label: "Tools Used", name: "tools", widget: "string", required: false, hint: "e.g. Sargent & Greenleaf manipulation kit, StrongArm drill jig" }
+      - { label: "Time on Site", name: "time_on_site", widget: "string", required: false, hint: "e.g. 2.5 hours, 45 minutes" }
+      # ── COST ──
+      - { label: "Estimated Cost", name: "estimated_cost", widget: "string", required: false, hint: "What you quoted or estimated" }
+      - { label: "Final Cost", name: "final_cost", widget: "string", required: false, hint: "What the customer actually paid" }
+      # ── PHOTOS ──
+      - { label: "Main Photo (After)", name: "image", widget: "image" }
       - { label: "Before Photo", name: "before_image", widget: "image", required: false }
-      - { label: "Description", name: "body", widget: "markdown", required: false }
+      - { label: "Process Photo", name: "process_image", widget: "image", required: false, hint: "Mid-job photo showing the work" }
+      # ── OUTCOME ──
+      - { label: "Outcome / Resolution", name: "outcome", widget: "text", required: false, hint: "How did it end? Customer happy? Safe operational?" }
+      - { label: "Lessons Learned", name: "lessons", widget: "text", required: false, hint: "Anything noteworthy for future reference?" }
+      - { label: "Full Write-Up", name: "body", widget: "markdown", required: false, hint: "Full story if you want to write more detail" }
 
   # ─── TESTIMONIALS ───
   - name: "testimonials"
