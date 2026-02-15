@@ -6,109 +6,57 @@
   <title>Job of the Week | SafeCracker Inc | Featured Locksmith Projects</title>
   <meta name="description" content="Featured locksmith and safe projects from SafeCracker Inc. See our professional work throughout Southern California.">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-top:1.5rem}
+    .gallery-item{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);transition:transform 0.2s}
+    .gallery-item:hover{transform:translateY(-3px);box-shadow:0 4px 16px rgba(0,0,0,0.15)}
+    .gallery-item img{width:100%;height:250px;object-fit:cover;display:block}
+    .gallery-caption{padding:1rem}
+    .gallery-caption h3{margin:0 0 .25rem 0;font-size:1.1rem}
+    .gallery-caption .job-cat{display:inline-block;background:#1a3a5c;color:#fff;padding:2px 10px;border-radius:12px;font-size:.8rem;margin-bottom:.5rem}
+    .gallery-caption p{margin:.25rem 0;color:#666;font-size:.9rem}
+    .gallery-loading{text-align:center;padding:3rem;color:#666}
+    .featured-job{background:linear-gradient(135deg,#1a3a5c 0%,#2d5f8a 100%);color:#fff;border-radius:12px;padding:2rem;margin-bottom:2rem}
+    .featured-job h2{color:#fff;margin-top:.5rem}
+    .featured-badge{background:#d4a843;color:#1a3a5c;padding:4px 14px;border-radius:20px;font-size:.85rem;font-weight:600}
+    .featured-image img{width:100%;max-height:400px;object-fit:cover;border-radius:8px;margin-top:1rem}
+    .job-meta{opacity:.85}
+  </style>
 </head>
 <body>
-
-  <nav class="nav">
-    <div class="nav-container">
-      <div class="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="safes-vaults.html" class="nav-link">Safes & Vaults</a>
-        <a href="commercial.html" class="nav-link">Commercial</a>
-        <a href="residential.html" class="nav-link">Residential</a>
-        <a href="gates.html" class="nav-link">Gates</a>
-        <a href="job-of-the-week.html" class="nav-link active">Job of the Week</a>
-        <a href="learning-corner.html" class="nav-link">Learning Corner</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="service-areas.html" class="nav-link">Service Areas</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </div>
-    </div>
-  </nav>
-
+  <nav class="nav"><div class="nav-container"><div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="safes-vaults.html" class="nav-link">Safes &amp; Vaults</a>
+    <a href="commercial.html" class="nav-link">Commercial</a>
+    <a href="residential.html" class="nav-link">Residential</a>
+    <a href="gates.html" class="nav-link">Gates</a>
+    <a href="job-of-the-week.html" class="nav-link active">Job of the Week</a>
+    <a href="learning-corner.html" class="nav-link">Learning Corner</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="service-areas.html" class="nav-link">Service Areas</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div></div></nav>
   <main class="container">
     <header class="page-header">
       <h1>Job of the Week</h1>
-      <p>Real projects from the field â€” see our professional locksmith and safe work</p>
+      <p>Real projects from the field &#8212; see our professional locksmith and safe work</p>
     </header>
-
-    <!-- ============================================
-         FEATURED JOB - EDIT THIS SECTION WEEKLY
-         
-         To update:
-         1. Upload new photo to images/ folder via GitHub
-         2. Change the src="images/YOUR-NEW-PHOTO.jpg"
-         3. Update the title, location, date, and description
-         ============================================ -->
-    <section class="featured-job">
-      <div class="featured-job-content">
-        <span class="featured-badge">This Week's Featured Job</span>
-        <h2>Coming Soon</h2>
-        <p class="job-meta">ðŸ“ Location • ðŸ“… Date</p>
-        <p class="job-description">Our first featured job will be posted here soon! Check back to see real examples of our safe opening, commercial locksmith, and security work throughout Southern California.</p>
-        
-        <!-- UNCOMMENT AND EDIT WHEN YOU HAVE A PHOTO:
-        <div class="featured-image">
-          <img src="images/featured-job.jpg" alt="Description of the job">
-        </div>
-        -->
-      </div>
-    </section>
-
-    <!-- ============================================
-         PAST JOBS GALLERY
-         
-         To add a new job:
-         1. Upload photo to images/ folder
-         2. Copy a <div class="gallery-item"> block
-         3. Paste it and update the image, title, and description
-         ============================================ -->
+    <div id="featured-container"></div>
     <section class="content-section">
       <h2 class="section-title">Past Jobs</h2>
-      
-      <div class="gallery-grid">
-        
-        <!-- EXAMPLE JOB - Copy this block to add more jobs
-        <div class="gallery-item">
-          <img src="images/job-example.jpg" alt="Safe opening in Temecula">
-          <div class="gallery-caption">
-            <h3>Antique Floor Safe Opening</h3>
-            <p>Temecula • January 2026</p>
-          </div>
-        </div>
-        -->
-        
-        <div class="gallery-placeholder">
-          <p>ðŸ“¸ Job photos coming soon!</p>
-          <p class="small">We're building our gallery of completed projects.</p>
-        </div>
-        
+      <div id="gallery-grid" class="gallery-grid">
+        <div class="gallery-loading">Loading gallery...</div>
       </div>
     </section>
-
-    <!-- WHAT WE DOCUMENT -->
     <section class="gray-box">
       <h2>What You'll See Here</h2>
       <div class="info-grid">
-        <div class="info-card">
-          <h3>Safe Openings</h3>
-          <p>From forgotten combinations to mechanical failures â€” safes of all types and sizes.</p>
-        </div>
-        <div class="info-card">
-          <h3>Commercial Projects</h3>
-          <p>Master key systems, access control, door hardware installations and repairs.</p>
-        </div>
-        <div class="info-card">
-          <h3>Unusual Jobs</h3>
-          <p>Antique safes, vault doors, specialty locks â€” the interesting stuff we encounter.</p>
-        </div>
-        <div class="info-card">
-          <h3>Before & After</h3>
-          <p>See the transformation from locked-out to problem-solved.</p>
-        </div>
+        <div class="info-card"><h3>Safe Openings</h3><p>From forgotten combinations to mechanical failures &#8212; safes of all types and sizes.</p></div>
+        <div class="info-card"><h3>Commercial Projects</h3><p>Master key systems, access control, door hardware installations and repairs.</p></div>
+        <div class="info-card"><h3>Unusual Jobs</h3><p>Antique safes, vault doors, specialty locks &#8212; the interesting stuff we encounter.</p></div>
+        <div class="info-card"><h3>Before &amp; After</h3><p>See the transformation from locked-out to problem-solved.</p></div>
       </div>
     </section>
-
     <section class="cta-section">
       <h2>Have a Job for Us?</h2>
       <p class="phone">(619) 794-8355</p>
@@ -119,35 +67,13 @@
       </div>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h3>SafeCracker Inc</h3>
-          <p>Since 1996 • 29 Years Experience</p>
-          <p>CA License LCO6517</p>
-          <p>Licensed • Insured • Bonded</p>
-        </div>
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <p><a href="tel:6197948355">(619) 794-8355</a></p>
-          <p><a href="mailto:info@safecrackerinc.com">info@safecrackerinc.com</a></p>
-          <p>Hablamos Español</p>
-        </div>
-        <div class="footer-col">
-          <h3>Service Area</h3>
-          <p>150-mile radius from San Diego</p>
-          <p>San Diego • Riverside • Orange Counties</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 SafeCracker Inc. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
+  <footer class="footer"><div class="container"><div class="footer-grid">
+    <div class="footer-col"><h3>SafeCracker Inc</h3><p>Since 1996 &#8226; 29 Years Experience</p><p>CA License LCO6517</p><p>Licensed &#8226; Insured &#8226; Bonded</p></div>
+    <div class="footer-col"><h3>Contact</h3><p><a href="tel:6197948355">(619) 794-8355</a></p><p><a href="mailto:info@safecrackerinc.com">info@safecrackerinc.com</a></p><p>Hablamos Espa&#241;ol</p></div>
+    <div class="footer-col"><h3>Service Area</h3><p>150-mile radius from San Diego</p><p>San Diego &#8226; Riverside &#8226; Orange Counties</p></div>
+  </div><div class="footer-bottom"><p>&#169; 2026 SafeCracker Inc. All rights reserved.</p></div></div></footer>
+  <script>
+    var REPO="locks619/safecracker.com",GALLERY_PATH="docs/content/gallery",API_URL="https://api.github.com/repos/"+REPO+"/contents/"+GALLERY_PATH+"?ref=master";function parseFrontmatter(t){var m=t.match(/^---\n([\s\S]*?)\n---/);if(!m)return{};var fm={};m[1].split("\n").forEach(function(l){var i=l.indexOf(":");if(i>0){var k=l.slice(0,i).trim(),v=l.slice(i+1).trim();fm[k]=v}});var bm=t.match(/^---\n[\s\S]*?\n---\n([\s\S]*)/);if(bm&&bm[1].trim())fm.body=bm[1].trim();return fm}function formatDate(d){try{return new Date(d).toLocaleDateString("en-US",{month:"long",year:"numeric"})}catch(e){return""}}async function loadGallery(){try{var r=await fetch(API_URL);if(!r.ok)throw new Error("fail");var files=await r.json(),md=files.filter(function(f){return f.name.endsWith(".md")});if(!md.length){document.getElementById("gallery-grid").innerHTML='<div class="gallery-loading">Gallery coming soon!</div>';return}var entries=[];for(var i=0;i<md.length;i++){var fr=await fetch(md[i].download_url),txt=await fr.text();entries.push(parseFrontmatter(txt))}entries.sort(function(a,b){return new Date(b.date||0)-new Date(a.date||0)});var f=entries[0];document.getElementById("featured-container").innerHTML='<section class="featured-job"><div class="featured-job-content"><span class="featured-badge">Latest Job</span><h2>'+(f.title||"Untitled")+'</h2><p class="job-meta">'+(f.category||"")+" &#8226; "+formatDate(f.date)+"</p>"+(f.body?"<p>"+f.body+"</p>":"")+(f.image?'<div class="featured-image"><img src="'+f.image+'" alt="'+(f.title||"")+'" loading="lazy"></div>':"")+"</div></section>";document.getElementById("gallery-grid").innerHTML=entries.map(function(e){return'<div class="gallery-item">'+(e.image?'<img src="'+e.image+'" alt="'+(e.title||"")+'" loading="lazy">':"")+'<div class="gallery-caption">'+(e.category?'<span class="job-cat">'+e.category+"</span>":"")+"<h3>"+(e.title||"Untitled")+"</h3><p>"+formatDate(e.date)+"</p>"+(e.body?"<p>"+e.body+"</p>":"")+"</div></div>"}).join("")}catch(err){console.error(err);document.getElementById("gallery-grid").innerHTML='<div class="gallery-loading">Gallery coming soon!</div>'}}loadGallery();
+  </script>
 </body>
 </html>
-
-
