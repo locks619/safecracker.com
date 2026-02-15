@@ -1,10 +1,10 @@
 backend:
   name: github
   repo: locks619/safecracker.com
-  branch: main
+  branch: master
   base_url: https://safecracker-oauth.locks619.workers.dev
 
-media_folder: "public/images/uploads"
+media_folder: "docs/images/uploads"
 public_folder: "/images/uploads"
 
 site_url: https://safecrackerinc.com
@@ -14,7 +14,7 @@ collections:
   # ─── BLOG / NEWS POSTS ───
   - name: "blog"
     label: "Blog Posts"
-    folder: "src/content/blog"
+    folder: "docs/content/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -28,7 +28,7 @@ collections:
   # ─── JOB GALLERY (phone uploads) ───
   - name: "gallery"
     label: "Job Gallery"
-    folder: "src/content/gallery"
+    folder: "docs/content/gallery"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -43,7 +43,7 @@ collections:
   # ─── TESTIMONIALS ───
   - name: "testimonials"
     label: "Testimonials"
-    folder: "src/content/testimonials"
+    folder: "docs/content/testimonials"
     create: true
     fields:
       - { label: "Customer Name", name: "title", widget: "string" }
@@ -58,7 +58,7 @@ collections:
     files:
       - label: "Business Info"
         name: "business"
-        file: "src/content/settings/business.json"
+        file: "docs/content/settings/business.json"
         fields:
           - { label: "Business Name", name: "name", widget: "string", default: "Safecracker Locksmith & Safe Services" }
           - { label: "Phone", name: "phone", widget: "string", default: "(619) 794-8355" }
